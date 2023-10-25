@@ -119,3 +119,14 @@ Ensure knowledge transfer to relevant teams for ongoing maintenance.
 
 Complete any outstanding project documentation.
 Conduct a project review and identify lessons learned for future implementations.
+
+
+
+Requirements:
+
+1. MySql server installed
+2. Postman installed
+3. Clone the project and import the application into your IDE as Maven project
+4. Then edit application.properties file according to your configuration settings.
+5. Then to run the application as Java Application by running this main class “MainTekanaEWallet.java” under com.tekana.ewallet package
+6. Use Postman to send request and get response via different APIs of the application
