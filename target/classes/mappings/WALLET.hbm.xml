@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tekana.ewallet.model">
+	<class name="Wallet" table="CUSTOMER_WALLET">
+		<id name="walletAccountNo" column="WALLET_ACCOUNT_NO">
+			<generator class="identity" />
+		</id>
+		<property name="walletType" column="WALLET_TYPE" />
+		<many-to-one name="customerObj" class="com.tekana.ewallet.model.Customer">
+            <column name="CUSTOMER_ID" />
+        </many-to-one>       
+		<property name="balance" column="BALANCE" />
+
+	</class>
+</hibernate-mapping>

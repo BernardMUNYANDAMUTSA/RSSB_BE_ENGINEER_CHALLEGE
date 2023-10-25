@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tekana.ewallet.model">
+	<class name="Transaction" table="WALLET_TRANSACTIONS">
+		<id name="transactiontId" column="TRANSACTION_ID">
+			<generator class="identity" />
+		</id>
+		<many-to-one name="senderWalletAccountNo" class="com.tekana.ewallet.model.Wallet">
+            <column name="SENDER_ACCOUNT_NO" />
+        </many-to-one>
+		<many-to-one name="receiverWalletAccountNo" class="com.tekana.ewallet.model.Wallet">
+            <column name="RECEIVER_ACCOUNT_NO" />
+        </many-to-one>
+		<property name="transferredAmount" column="TRANSFERRED_AMOUNT" />
+		<property name="transactionDate" column="TRANSACTION_DATE" />
+		
+		
+	</class>
+</hibernate-mapping>
