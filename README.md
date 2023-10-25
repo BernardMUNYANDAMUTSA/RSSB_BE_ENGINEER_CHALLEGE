@@ -1,6 +1,7 @@
 # RSSB_BE_ENGINEER_CHALLEGE
 
-Strategy:
+
+# Strategy:
 
 1. First, gather requirements from the business team and other stakeholders to understand the needs and goals of the project.
 This will involve working closely with the product owner, UI/UX designers, and other subject matter experts to define the features and functionality of the new back-end solution.
@@ -23,7 +24,7 @@ This will involve collaborating with the QA team to define and execute test case
 7. Once the new back-end solution is live, continue to monitor and optimize its performance and stability, and iterate on the codebase as needed to address any issues or add new features.
 
 
-Strategy or plan needs to show what needs to happen from day 1 until go-live of the pilot system.
+# Strategy or plan needs to show what needs to happen from day 1 until go-live of the pilot system.
 
 1. Project Initiation:
 
@@ -121,8 +122,7 @@ Complete any outstanding project documentation.
 Conduct a project review and identify lessons learned for future implementations.
 
 
-
-Requirements:
+# Requirements:
 
 1. MySql server installed
 2. Postman installed
